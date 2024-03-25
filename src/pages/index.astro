@@ -1,27 +1,34 @@
 ---
-import Sidebar from "#components/Sidebar.astro";
-import Surface from "#components/Surface.astro";
 import Base from "#layouts/Base.astro";
 import HeroSection from "../components/home/HeroSection.astro";
-import Testimonials from "../components/home/Testimonials.astro";
-import Samples from "../components/home/Samples.svelte";
-import Region from "../components/Region.astro";
 import Principles from "../components/home/Principles.astro";
+import Samples from "../components/home/Samples.svelte";
+import Testimonials from "../components/home/Testimonials.astro";
 ---
 
 <Base title="Accueil">
-  <HeroSection />
+  <section>
+    <HeroSection />
+  </section>
 
-  <Region>
+  <section>
     <h2 class="text-3xl bold" style="margin-block-end: var(--space-l);">
       Un magazine pour:
     </h2>
     <Samples client:idle />
-  </Region>
+  </section>
 
-  <Testimonials />
+  <section class="full-width">
+    <Testimonials />
+  </section>
 
-  <Region>
+  <section>
     <Principles />
-  </Region>
+  </section>
 </Base>
+
+<style>
+  section {
+    padding-block: var(--space-xl);
+  }
+</style>

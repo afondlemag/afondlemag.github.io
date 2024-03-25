@@ -1,37 +1,29 @@
 ---
 import Button from "#components/Button.svelte";
 import Surface from "#components/Surface.astro";
-import Region from "../Region.astro";
 ---
 
-<Region top="3xl" bottom="2xl">
-  <div class="hero">
-    <div class="description">
-      <Surface background="yellow-2" text="black" rotate={-1.8} border>
-        <h2 class="text-2xl">Le mag des mordus de sports&nbsp;!</h2>
-        <p>
-          Parce que le sport mérite d’avoir son magazine jeunesse et que la
-          presse jeunesse mérite d’avoir son magazine de sport, nous avons
-          imaginé À fond ! Un magazine imprimé de 60 pages, pour toutes les
-          petites filles et les petits garçons de 7 à 11 ans.
-        </p>
-      </Surface>
-      <div class="btns">
-        <Button href="/boutique">S'abonner</Button>
-        <Button href="https://www.calameo.com/read/0071538196f9628abe6c3"
-          >Feuilleter</Button
-        >
-      </div>
+<div class="hero">
+  <div class="description">
+    <Surface background="yellow-2" text="black" rotate={-1.8} border>
+      <h2 class="text-2xl">Le mag des mordus de sports&nbsp;!</h2>
+      <p>
+        Parce que le sport mérite d’avoir son magazine jeunesse et que la presse
+        jeunesse mérite d’avoir son magazine de sport, nous avons imaginé À fond
+        ! Un magazine imprimé de 60 pages, pour toutes les petites filles et les
+        petits garçons de 7 à 11 ans.
+      </p>
+    </Surface>
+    <div class="btns">
+      <Button href="/boutique">S'abonner</Button>
+      <Button href="https://www.calameo.com/read/0071538196f9628abe6c3"
+        >Feuilleter</Button
+      >
     </div>
-
-    <img
-      src="/mojoacro.png"
-      alt=""
-      style="margin-inline:auto;"
-      slot="sidebar"
-    />
   </div>
-</Region>
+
+  <img src="/mojoacro.png" alt="" style="margin-inline:auto;" slot="sidebar" />
+</div>
 
 <style>
   .hero {
