@@ -1,6 +1,6 @@
 ---
 name: Juliette Mariage
-image: juliette.png
+image: /juliette.png
 priority: 2
 ---
 

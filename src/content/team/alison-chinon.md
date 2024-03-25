@@ -1,6 +1,6 @@
 ---
 name: Alison Chinon
-image: alison.png
+image: /alison.png
 priority: 1
 ---
 

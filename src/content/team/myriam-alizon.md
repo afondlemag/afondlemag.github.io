@@ -1,6 +1,6 @@
 ---
 name: Myriam Alizon
-image: myriam.png
+image: /myriam.png
 priority: 3
 ---
 
