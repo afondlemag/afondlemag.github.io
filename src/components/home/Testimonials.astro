@@ -1,0 +1,36 @@
+---
+import { getItemsFromCollection } from "../../lib/content/getCollectionItems.ts";
+import type { ColorKey } from "../../lib/designSystem/colors.ts";
+import Reel from "../Reel.svelte";
+import Region from "../Region.astro";
+import Surface from "../Surface.astro";
+
+const surfaceColors: ColorKey[] = ["red-1", "blue-1", "green-1"];
+
+const testimonials = await getItemsFromCollection("testimonials");
+const getRotate = (index: number) => ((index % 2) - 0.5) * 3;
+const getColor = (index: number) => surfaceColors[index % surfaceColors.length];
+---
+
+<section class="full-width">
+  <Region>
+    <Reel client:idle>
+      <div class="reel">
+        {
+          testimonials.map(({ author, url, Content }, index) => (
+            <div class="item">
+              <Surface background={getColor(index)} rotate={getRotate(index)}>
+                <blockquote>
+                  <Content />
+                </blockquote>
+                <p class="text-right">
+                  <cite>{url ? <a href={url}>{author}</a> : author}</cite>
+                </p>
+              </Surface>
+            </div>
+          ))
+        }
+      </div>
+    </Reel>
+  </Region>
+</section>

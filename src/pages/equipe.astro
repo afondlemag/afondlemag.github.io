@@ -1,0 +1,42 @@
+---
+import Base from "#layouts/Base.astro";
+import { getItemsFromCollection } from "#lib/content/getCollectionItems.ts";
+import Surface from "../components/Surface.astro";
+const teamMembers = await getItemsFromCollection("team");
+---
+
+<Base title="L'équipe">
+  <div class="team wide-width">
+    {
+      teamMembers.map(({ name, image, Content }) => (
+        <div class="member">
+          <img src={image} alt={`portrait de ${name}`} />
+          <Surface background="green-1" center>
+            <h2 class="text-lg semibold">{name}</h2>
+          </Surface>
+          <Surface background="blue-1" center>
+            <Content />
+          </Surface>
+        </div>
+      ))
+    }
+  </div>
+</Base>
+
+<style>
+  .team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+    gap: var(--space-l);
+    align-items: start;
+  }
+  .member {
+    display: grid;
+    gap: var(--space-l);
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    margin-inline: auto;
+  }
+</style>

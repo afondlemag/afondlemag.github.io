@@ -1,0 +1,45 @@
+---
+import { colors, type ColorKey } from "#lib/designSystem/colors.ts";
+
+export type Props = {
+  background: ColorKey;
+  rotate?: number;
+  center?: boolean;
+  text?: ColorKey;
+  border?: boolean;
+};
+
+const {
+  background,
+  rotate,
+  center: isCenter,
+  text = "white",
+  border = false,
+} = Astro.props;
+const backgroundColor = colors[background];
+const textColor = colors[text];
+---
+
+<div class="flow" class:list={[{ center: isCenter, border }]}>
+  <slot />
+</div>
+
+<style define:vars={{ backgroundColor, textColor, rotate }}>
+  div {
+    position: relative;
+    max-width: (66ch);
+    background: var(--backgroundColor);
+    color: var(--textColor);
+    padding-inline: var(--space-xs);
+    padding-block: var(--space-s);
+    border-radius: 0.8rem;
+    transform: rotate(calc(1deg * var(--rotate)));
+    transform-origin: center;
+  }
+  .center {
+    margin-inline: auto;
+  }
+  .border {
+    border: 2px solid var(--color-black);
+  }
+</style>

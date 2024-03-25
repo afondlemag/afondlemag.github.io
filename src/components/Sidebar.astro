@@ -1,0 +1,50 @@
+---
+export type Props = {
+  toRight?: boolean;
+  sidebarSize?: string;
+};
+
+const { toRight = false, sidebarSize } = Astro.props;
+---
+
+{
+  toRight ? (
+    <div class="with-sidebar">
+      <div class="not-sidebar">
+        <slot />
+      </div>
+      <div class="sidebar">
+        <slot name="sidebar" />
+      </div>
+    </div>
+  ) : (
+    <div class="with-sidebar">
+      <div class="sidebar">
+        <slot name="sidebar" />
+      </div>
+      <div class="not-sidebar">
+        <slot />
+      </div>
+    </div>
+  )
+}
+
+<style define:vars={{ sidebarSize }}>
+  .with-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2xl);
+    align-items: center;
+  }
+
+  .sidebar {
+    flex-basis: var(--sidebarSize, 20rem);
+    flex-grow: 1;
+  }
+
+  .not-sidebar {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-inline-size: 50%;
+  }
+</style>

@@ -1,9 +1,27 @@
 ---
+import Sidebar from "#components/Sidebar.astro";
+import Surface from "#components/Surface.astro";
 import Base from "#layouts/Base.astro";
-import Counter from "#components/Counter.svelte";
+import HeroSection from "../components/home/HeroSection.astro";
+import Testimonials from "../components/home/Testimonials.astro";
+import Samples from "../components/home/Samples.svelte";
+import Region from "../components/Region.astro";
+import Principles from "../components/home/Principles.astro";
 ---
 
 <Base title="Accueil">
-  <p>Coucou</p>
-  <Counter client:idle />
+  <HeroSection />
+
+  <Region>
+    <h2 class="text-3xl bold" style="margin-block-end: var(--space-l);">
+      Un magazine pour:
+    </h2>
+    <Samples client:idle />
+  </Region>
+
+  <Testimonials />
+
+  <Region>
+    <Principles />
+  </Region>
 </Base>
