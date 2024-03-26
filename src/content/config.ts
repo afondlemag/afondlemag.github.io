@@ -51,6 +51,14 @@ const principlesCollection = defineCollection({
   }),
 });
 
+const faqCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    priority: z.number().optional(),
+  }),
+});
+
 export const collections = {
   pages: pageCollection,
   testimonials: testimonialCollection,
@@ -58,4 +66,5 @@ export const collections = {
   principles: principlesCollection,
   hero: heroCollection,
   samples: samplesCollection,
+  faq: faqCollection,
 };

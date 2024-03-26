@@ -65,6 +65,12 @@ export default defineConfig({
         path: "src/content/team",
         fields: [fields.title, fields.image, fields.body, fields.priority],
       },
+      {
+        name: "faq",
+        label: "Faq",
+        path: "src/content/faq",
+        fields: [fields.title, fields.body, fields.priority],
+      },
     ],
   },
 });
