@@ -1,6 +1,6 @@
 <script lang="ts">
   import { fade } from "svelte/transition";
-  import { slide } from "../lib/svelte/transitions/slide";
+  import { slide } from "../../lib/svelte/transitions/slide";
 
   let isOpen = false;
 

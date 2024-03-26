@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { createToast } from "../lib/createToast.ts";
-  import Button from "./Button.svelte";
+  import { createToast } from "../../lib/createToast.ts";
+  import Button from "../Button.svelte";
 
   let email: "";
   const endpoint =

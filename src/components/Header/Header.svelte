@@ -1,6 +1,6 @@
 <script lang="ts">
   import { tweened } from "svelte/motion";
-  import Button from "./Button.svelte";
+  import Button from "../Button.svelte";
   import Menu from "./Menu.svelte";
   import { linear } from "svelte/easing";
 
@@ -26,6 +26,7 @@
       <li><Button href="/actualites">Actualités</Button></li>
       <li><Button href="/equipe">L'équipe</Button></li>
       <li><Button href="/la-boutique">La boutique</Button></li>
+      <li><Button href="/faq">Faq</Button></li>
     </ul>
   </nav>
   <nav class="mobile">
@@ -39,6 +40,7 @@
         <li style="--_index:3;">
           <Button href="/la-boutique">La boutique</Button>
         </li>
+        <li style="--_index:4;"><Button href="/faq">Faq</Button></li>
       </ul>
     </Menu>
   </nav>
