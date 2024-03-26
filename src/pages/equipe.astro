@@ -8,11 +8,11 @@ const teamMembers = await getItemsFromCollection("team");
 <Base title="L'équipe">
   <div class="team wide-width">
     {
-      teamMembers.map(({ name, image, Content }) => (
+      teamMembers.map(({ title, image, Content }) => (
         <div class="member">
-          <img src={image} alt={`portrait de ${name}`} />
+          <img src={image} alt={`portrait de ${title}`} />
           <Surface background="green-1" center>
-            <h2 class="text-lg semibold">{name}</h2>
+            <h2 class="text-lg semibold">{title}</h2>
           </Surface>
           <Surface background="blue-1" center>
             <Content />

@@ -1,5 +1,5 @@
 ---
-name: Alison Chinon
+title: Alison Chinon
 image: /alison.png
 priority: 1
 ---

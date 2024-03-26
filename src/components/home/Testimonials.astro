@@ -14,14 +14,14 @@ const getColor = (index: number) => surfaceColors[index % surfaceColors.length];
 <Reel client:idle>
   <div class="reel">
     {
-      testimonials.map(({ author, url, Content }, index) => (
+      testimonials.map(({ title, url, Content }, index) => (
         <div class="item">
           <Surface background={getColor(index)} rotate={getRotate(index)}>
             <blockquote>
               <Content />
             </blockquote>
             <p class="text-right">
-              <cite>{url ? <a href={url}>{author}</a> : author}</cite>
+              <cite>{url ? <a href={url}>{title}</a> : title}</cite>
             </p>
           </Surface>
         </div>

@@ -2,10 +2,11 @@
   import { tweened } from "svelte/motion";
   import Button from "./Button.svelte";
   import Menu from "./Menu.svelte";
+  import { linear } from "svelte/easing";
 
   let scrollY = 0;
   let lastScrollY = 0;
-  let translateY = tweened(0, { duration: 300 });
+  let translateY = tweened(0, { duration: 300, easing: linear });
   $: {
     if (scrollY > lastScrollY) $translateY = 1;
     else $translateY = 0;

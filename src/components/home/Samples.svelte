@@ -1,28 +1,10 @@
 <script lang="ts">
   import { fade } from "svelte/transition";
-
-  const tabs = [
-    {
-      title: "Rêver",
-      text: "La grande histoire, chapitrée et illustrée, raconte le parcours d’une championne ou d’un champion.",
-      img: "histoire-xl.jpg",
-    },
-    {
-      title: "Découvrir",
-      text: "Dans chaque numéro, retrouve un dossier, un photoreportage, des interviews et des rubriques rigolotes pour tout savoir sur le sport et ses spécificités.",
-      img: "dossier-xl.jpg",
-    },
-    {
-      title: "S'informer",
-      text: "Avec les pages gazette, tu seras toujours au courant de l’actualité sportive et de la vie du « Club des Fondus », la communauté des abonné(e)s À fond!",
-      img: "gazette-xl.jpg",
-    },
-    {
-      title: "S'amuser",
-      text: "Tu t'es souvent demandé comment réussir ton plongeon ou ta roue et mettre un panier à tous les coups ? Les champions te donnent leurs conseils dans le Geste de pro, la rubrique qui donne envie d'enfiler ses baskets. Dans chaque numéro, tu découvriras aussi des jeux, des quiz et des cartes à collectionner. Et un poster!",
-      img: "jeux-xl.jpg",
-    },
-  ];
+  export let tabs: {
+    title: string;
+    image: string;
+    text: string;
+  }[];
   let current = 0;
 </script>
 
@@ -40,7 +22,7 @@
   <div class="image">
     {#key current}
       <div class="imageContent" transition:fade>
-        <img src={tabs[current].img} alt="" />
+        <img src={tabs[current].image} alt="" />
         <p>{tabs[current].text}</p>
       </div>
     {/key}

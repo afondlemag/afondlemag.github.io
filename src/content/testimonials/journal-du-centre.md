@@ -1,5 +1,5 @@
 ---
-author: Le journal du centre
+title: Le journal du centre
 url: https://www.lejdc.fr/
 ---
 

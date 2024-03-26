@@ -1,11 +1,12 @@
 <script lang="ts">
   export let href: string | undefined = undefined;
   export let buttonType: "button" | "submit" | "reset" | undefined = undefined;
+  export let targetBlank = false;
   export let rounded = false;
 </script>
 
 {#if href}
-  <a {href} class:rounded>
+  <a {href} target={targetBlank ? "_blank" : "_parent"} class:rounded>
     <slot />
     <span aria-hidden="true">
       <slot />

@@ -4,6 +4,9 @@ import HeroSection from "../components/home/HeroSection.astro";
 import Principles from "../components/home/Principles.astro";
 import Samples from "../components/home/Samples.svelte";
 import Testimonials from "../components/home/Testimonials.astro";
+import { getItemsFromCollection } from "../lib/content/getCollectionItems.ts";
+
+const samples = await getItemsFromCollection("samples");
 ---
 
 <Base title="Accueil">
@@ -15,7 +18,7 @@ import Testimonials from "../components/home/Testimonials.astro";
     <h2 class="text-3xl bold" style="margin-block-end: var(--space-l);">
       Un magazine pour:
     </h2>
-    <Samples client:idle />
+    <Samples client:idle tabs={samples} />
   </section>
 
   <section class="full-width">

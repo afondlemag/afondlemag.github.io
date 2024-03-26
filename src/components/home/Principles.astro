@@ -1,21 +1,29 @@
 ---
+import { getCollection } from "astro:content";
 import Surface from "../Surface.astro";
+import type { ColorKey } from "../../lib/designSystem/colors.ts";
+import { getItemsFromCollection } from "../../lib/content/getCollectionItems.ts";
+
+const colors: ColorKey[] = ["green-2", "yellow-2", "blue-2", "orange"];
+const rotates = [-0.8, -0.4, 1.3, 0.9];
+
+const principles = await getItemsFromCollection("principles");
+
+const getBg = (i: number) => colors[i % colors.length];
+const getRotate = (i: number) => rotates[i % rotates.length];
 ---
 
 <h2 class="text-3xl bold">Nos principes</h2>
 <div class="grid">
-  <Surface background="green-2" text="black" border rotate={-0.8}>
-    <p class="text-lg semibold">À fond ! aime la mixité et la diversité</p>
-  </Surface>
-  <Surface background="yellow-2" text="black" border rotate={-0.4}>
-    <p class="text-lg semibold">À fond ! aime toutes les pratiques sportives</p>
-  </Surface>
-  <Surface background="blue-2" text="black" border rotate={1.3}>
-    <p class="text-lg semibold">À fond ! est un magazine indépendant</p>
-  </Surface>
-  <Surface background="orange" text="black" border rotate={0.9}>
-    <p class="text-lg semibold">À fond ! est imprimé en France</p>
-  </Surface>
+  {
+    principles.map(({ Content }, i) => (
+      <Surface background={getBg(i)} rotate={getRotate(i)} text="black" border>
+        <div class="content">
+          <Content />
+        </div>
+      </Surface>
+    ))
+  }
 </div>
 
 <style>
@@ -27,6 +35,11 @@ import Surface from "../Surface.astro";
       text-align: left;
       margin-block-end: var(--space-l);
     }
+  }
+  .content {
+    font-size: var(--step-1);
+    font-weight: 500;
+    line-height: 1.1;
   }
   .grid {
     display: grid;

@@ -1,5 +1,5 @@
 ---
-name: Myriam Alizon
+title: Myriam Alizon
 image: /myriam.png
 priority: 3
 ---
