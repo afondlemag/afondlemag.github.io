@@ -13,6 +13,7 @@ const heroCollection = defineCollection({
     title: z.string(),
     url: z.string(),
     image: z.string(),
+    altImage: z.string(),
   }),
 });
 
@@ -30,6 +31,7 @@ const samplesCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     image: z.string(),
+    altImage: z.string(),
     text: z.string(),
     priority: z.number().optional(),
   }),
@@ -59,6 +61,16 @@ const faqCollection = defineCollection({
   }),
 });
 
+const postsCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    date: z.date(),
+    image: z.string(),
+    altImage: z.string(),
+  }),
+});
+
 export const collections = {
   pages: pageCollection,
   testimonials: testimonialCollection,
@@ -67,4 +79,5 @@ export const collections = {
   hero: heroCollection,
   samples: samplesCollection,
   faq: faqCollection,
+  posts: postsCollection,
 };

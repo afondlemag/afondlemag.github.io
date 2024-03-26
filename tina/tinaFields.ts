@@ -32,10 +32,22 @@ export const fields = {
     label: "Image",
     required: true,
   },
+  altImage: {
+    type: "string",
+    name: "altImage",
+    label: "Texte alternatif",
+    required: true,
+  },
   url: {
     type: "string",
     name: "url",
     label: "url",
+    required: true,
+  },
+  date: {
+    type: "datetime",
+    name: "date",
+    label: "date",
     required: true,
   },
 } satisfies Record<string, TinaField>;

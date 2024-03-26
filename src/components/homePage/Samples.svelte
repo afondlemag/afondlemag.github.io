@@ -3,6 +3,7 @@
   export let tabs: {
     title: string;
     image: string;
+    altImage: string;
     text: string;
   }[];
   let current = 0;
@@ -22,7 +23,7 @@
   <div class="image">
     {#key current}
       <div class="imageContent" transition:fade>
-        <img src={tabs[current].image} alt="" />
+        <img src={tabs[current].image} alt={tabs[current].altImage} />
         <p>{tabs[current].text}</p>
       </div>
     {/key}
