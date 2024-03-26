@@ -1,8 +1,9 @@
 ---
 import Base from "#layouts/Base.astro";
+import TabPannel from "../components/Tabs/TabPannel.svelte";
+import Tabs from "../components/Tabs/Tabs.svelte";
 import HeroSection from "../components/homePage/HeroSection.astro";
 import Principles from "../components/homePage/Principles.astro";
-import Samples from "../components/homePage/Samples.svelte";
 import Testimonials from "../components/homePage/Testimonials.astro";
 import { getItemsFromCollection } from "../lib/content/getCollectionItems.ts";
 
@@ -18,7 +19,16 @@ const samples = await getItemsFromCollection("samples");
     <h2 class="text-3xl bold" style="margin-block-end: var(--space-l);">
       Un magazine pour:
     </h2>
-    <Samples client:idle tabs={samples} />
+    <Tabs keys={samples.map((el) => el.title)} client:idle>
+      {
+        samples.map(({ title, image, altImage, Content }) => (
+          <TabPannel key={title} client:idle>
+            <img src={image} alt={altImage} />
+            <Content />
+          </TabPannel>
+        ))
+      }
+    </Tabs>
   </section>
 
   <section class="full-width">

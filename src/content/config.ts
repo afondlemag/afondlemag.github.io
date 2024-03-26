@@ -32,7 +32,6 @@ const samplesCollection = defineCollection({
     title: z.string(),
     image: z.string(),
     altImage: z.string(),
-    text: z.string(),
     priority: z.number().optional(),
   }),
 });

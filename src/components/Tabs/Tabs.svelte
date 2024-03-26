@@ -1,32 +1,22 @@
 <script lang="ts">
-  import { fade } from "svelte/transition";
-  export let tabs: {
-    title: string;
-    image: string;
-    altImage: string;
-    text: string;
-  }[];
-  let current = 0;
+  import { currentTab } from "./tabsStore.ts";
+  export let keys: string[];
+  $currentTab = keys[0];
 </script>
 
 <div class="wrapper">
-  <ul class="links" role="list">
-    {#each tabs as { title }, i}
+  <ul role="list">
+    {#each keys as key}
       <li>
         <button
-          aria-current={i === Math.floor(current)}
-          on:click={() => (current = i)}>{title}</button
+          aria-current={$currentTab === key}
+          on:click={() => ($currentTab = key)}>{key}</button
         >
       </li>
     {/each}
   </ul>
-  <div class="image">
-    {#key current}
-      <div class="imageContent" transition:fade>
-        <img src={tabs[current].image} alt={tabs[current].altImage} />
-        <p>{tabs[current].text}</p>
-      </div>
-    {/key}
+  <div class="content">
+    <slot />
   </div>
 </div>
 
@@ -60,17 +50,8 @@
   button[aria-current="true"] {
     color: var(--color-blue-1);
   }
-  .image {
+  .content {
     display: grid;
-  }
-  .imageContent {
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-s);
-    padding: var(--space-xs);
   }
   @media (width > 60rem) {
     .wrapper {
