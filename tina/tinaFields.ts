@@ -16,6 +16,7 @@ export const fields = {
   text: {
     type: "string",
     name: "text",
+    required: true,
     ui: {
       component: "textarea",
     },
