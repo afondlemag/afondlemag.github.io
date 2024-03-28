@@ -5,16 +5,15 @@
 </script>
 
 <div class="wrapper">
-  <ul role="list">
+  <div role="tablist" class="tabs">
     {#each keys as key}
-      <li>
-        <button
-          aria-current={$currentTab === key}
-          on:click={() => ($currentTab = key)}>{key}</button
-        >
-      </li>
+      <button
+        role="tab"
+        aria-selected={$currentTab === key}
+        on:click={() => ($currentTab = key)}>{key}</button
+      >
     {/each}
-  </ul>
+  </div>
   <div class="content">
     <slot />
   </div>
@@ -27,9 +26,10 @@
     align-items: start;
     gap: var(--space-s);
   }
-  ul {
+  .tabs {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     column-gap: var(--space-m);
     row-gap: var(--space-xs);
   }
@@ -44,10 +44,10 @@
     padding-inline: var(--space-2xs);
     font-size: var(--step-1);
   }
-  button:where([aria-current="true"], :hover, :focus-visible) {
+  button:where([aria-selected="true"], :hover, :focus-visible) {
     opacity: 1;
   }
-  button[aria-current="true"] {
+  button[aria-selected="true"] {
     color: var(--color-blue-1);
   }
   .content {
@@ -58,7 +58,7 @@
       flex-direction: row;
       gap: var(--space-xl);
     }
-    ul {
+    .tabs {
       flex-wrap: nowrap;
       flex-direction: column;
       font-size: var(--step-3);

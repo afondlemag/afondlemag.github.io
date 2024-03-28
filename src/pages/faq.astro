@@ -1,9 +1,9 @@
 ---
 import Accordion from "../components/Accordion/Accordion.svelte";
 import Base from "../layouts/Base.astro";
-import { getItemsFromCollection } from "../lib/content/getCollectionItems.ts";
+import { getCollectionByPriority } from "../lib/content/getCollectionItems.ts";
 
-const questions = await getItemsFromCollection("faq");
+const questions = await getCollectionByPriority("faq");
 ---
 
 <Base title="Foire aux questions">

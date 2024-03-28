@@ -1,0 +1,97 @@
+---
+import slugify from "slugify";
+import type { GetStaticPaths } from "astro";
+import { getCollectionByDate } from "../../lib/content/getCollectionItems.ts";
+import Base from "../../layouts/Base.astro";
+import { Image } from "astro:assets";
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const actualites = await getCollectionByDate("posts");
+  return paginate(actualites, { pageSize: 12 });
+}) satisfies GetStaticPaths;
+
+const { page } = await Astro.props;
+const { next, prev } = page.url;
+const actus = page.data;
+const rotates = [-0.8, -0.4, 1.3, 0.9];
+---
+
+<Base title="Actualités">
+  <section class="wide-width">
+    {
+      actus.map((el, i) => (
+        <article style={`transform: rotate(${rotates[i % rotates.length]}deg)`}>
+          <a href={`/actualites/${slugify(el.title)}`} class="imgWrapper">
+            <Image src={el.image} alt={el.altImage} />
+          </a>
+          <div class="description">
+            <h2 class="text-lg semibold">
+              <a href={`/actualites/${slugify(el.title)}`}>{el.title}</a>
+            </h2>
+            <p>{el.text}</p>
+          </div>
+        </article>
+      ))
+    }
+  </section>
+  <nav>
+    {prev && <a href={prev}>Précédent</a>}
+    {
+      next && (
+        <a href={next} class="next link">
+          Suivant
+        </a>
+      )
+    }
+  </nav>
+</Base>
+
+<style>
+  section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
+    gap: var(--space-s);
+    --line-weight: 3px;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3xs);
+    background: white;
+    border: 2px solid var(--color-black);
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  .imgWrapper {
+    aspect-ratio: 3/ 2;
+    height: auto;
+    width: 100%;
+    min-height: 0;
+    & > img {
+      object-fit: contain;
+      object-position: center;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.2s;
+    }
+    &:where(:hover, :focus-visible) img {
+      transform: scale(1.04);
+    }
+  }
+  .description {
+    padding-inline: var(--space-xs);
+    padding-block: var(--space-2xs);
+    & > h2 {
+      margin-block-end: var(--space-2xs);
+    }
+  }
+  nav {
+    margin-block-start: var(--space-xl);
+    margin-block-end: var(--space-l);
+    display: flex;
+    align-items: center;
+    & > .next {
+      margin-inline-start: auto;
+    }
+  }
+</style>

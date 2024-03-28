@@ -1,13 +1,14 @@
 ---
 import Base from "#layouts/Base.astro";
+import { Image } from "astro:assets";
 import TabPannel from "../components/Tabs/TabPannel.svelte";
 import Tabs from "../components/Tabs/Tabs.svelte";
 import HeroSection from "../components/homePage/HeroSection.astro";
 import Principles from "../components/homePage/Principles.astro";
 import Testimonials from "../components/homePage/Testimonials.astro";
-import { getItemsFromCollection } from "../lib/content/getCollectionItems.ts";
+import { getCollectionByPriority } from "../lib/content/getCollectionItems.ts";
 
-const samples = await getItemsFromCollection("samples");
+const samples = await getCollectionByPriority("samples");
 ---
 
 <Base title="Accueil">
@@ -23,7 +24,7 @@ const samples = await getItemsFromCollection("samples");
       {
         samples.map(({ title, image, altImage, Content }) => (
           <TabPannel key={title} client:idle>
-            <img src={image} alt={altImage} />
+            <Image src={image} alt={altImage} />
             <Content />
           </TabPannel>
         ))

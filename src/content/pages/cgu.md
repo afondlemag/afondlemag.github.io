@@ -1,5 +1,5 @@
 ---
-title: cgu-cgv
+title: cgu cgv
 ---
 
 # Conditions générales d'utilisation

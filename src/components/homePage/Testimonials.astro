@@ -1,12 +1,12 @@
 ---
-import { getItemsFromCollection } from "../../lib/content/getCollectionItems.ts";
+import { getCollectionByPriority } from "../../lib/content/getCollectionItems.ts";
 import type { ColorKey } from "../../lib/designSystem/colors.ts";
 import Reel from "../Reel.svelte";
 import Surface from "../Surface.astro";
 
 const surfaceColors: ColorKey[] = ["red-1", "blue-1", "green-1"];
 
-const testimonials = await getItemsFromCollection("testimonials");
+const testimonials = await getCollectionByPriority("testimonials");
 const getRotate = (index: number) => ((index % 2) - 0.5) * 3;
 const getColor = (index: number) => surfaceColors[index % surfaceColors.length];
 ---

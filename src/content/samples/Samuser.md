@@ -1,7 +1,7 @@
 ---
 title: S'amuser
 priority: 0
-image: /jeux-xl.jpg
+image: /src/assets/jeux-xl.jpg
 altImage: Vue des pages "Jeux"
 ---
 

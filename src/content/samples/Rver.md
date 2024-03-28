@@ -1,7 +1,7 @@
 ---
 title: Rêver
 priority: 30
-image: /histoire-xl.jpg
+image: /src/assets/histoire-xl.jpg
 altImage: Vue des pages "La grande histoire"
 ---
 

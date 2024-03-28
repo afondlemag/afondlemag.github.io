@@ -9,12 +9,13 @@ const pageCollection = defineCollection({
 
 const heroCollection = defineCollection({
   type: "content",
-  schema: z.object({
-    title: z.string(),
-    url: z.string(),
-    image: z.string(),
-    altImage: z.string(),
-  }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      url: z.string(),
+      image: image(),
+      altImage: z.string(),
+    }),
 });
 
 const testimonialCollection = defineCollection({
@@ -28,21 +29,23 @@ const testimonialCollection = defineCollection({
 
 const samplesCollection = defineCollection({
   type: "content",
-  schema: z.object({
-    title: z.string(),
-    image: z.string(),
-    altImage: z.string(),
-    priority: z.number().optional(),
-  }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      image: image(),
+      altImage: z.string(),
+      priority: z.number().optional(),
+    }),
 });
 
 const teamCollection = defineCollection({
   type: "content",
-  schema: z.object({
-    title: z.string(),
-    image: z.string(),
-    priority: z.number().optional(),
-  }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      image: image(),
+      priority: z.number().optional(),
+    }),
 });
 
 const principlesCollection = defineCollection({
@@ -62,12 +65,14 @@ const faqCollection = defineCollection({
 
 const postsCollection = defineCollection({
   type: "content",
-  schema: z.object({
-    title: z.string(),
-    date: z.date(),
-    image: z.string(),
-    altImage: z.string(),
-  }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      date: z.date(),
+      image: image(),
+      altImage: z.string(),
+      text: z.string(),
+    }),
 });
 
 export const collections = {

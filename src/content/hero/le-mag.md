@@ -1,7 +1,7 @@
 ---
 magazineUrl: 'https://www.calameo.com/read/0071538196f9628abe6c3'
 title: Le mag des mordus de sports !
-image: /mojoacro.png
+image: /src/assets/mojoacro.png
 altImage: Mo et Jo qui font du sport
 url: 'https://www.calameo.com/read/0071538196f9628abe6c3'
 ---

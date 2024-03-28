@@ -2,12 +2,12 @@
 import { getCollection } from "astro:content";
 import Surface from "../Surface.astro";
 import type { ColorKey } from "../../lib/designSystem/colors.ts";
-import { getItemsFromCollection } from "../../lib/content/getCollectionItems.ts";
+import { getCollectionByPriority } from "../../lib/content/getCollectionItems.ts";
 
 const colors: ColorKey[] = ["green-2", "yellow-2", "blue-2", "orange"];
 const rotates = [-0.8, -0.4, 1.3, 0.9];
 
-const principles = await getItemsFromCollection("principles");
+const principles = await getCollectionByPriority("principles");
 
 const getBg = (i: number) => colors[i % colors.length];
 const getRotate = (i: number) => rotates[i % rotates.length];

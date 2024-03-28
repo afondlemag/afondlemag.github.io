@@ -1,0 +1,132 @@
+---
+import { Image } from "astro:assets";
+import Button from "../Button.svelte";
+import HeaderWrapper from "./HeaderWrapper.svelte";
+import Menu from "./Menu.svelte";
+import logoImg from "../../assets/logo.png";
+
+let links = [
+  {
+    label: "Accueil",
+    href: "/",
+  },
+  {
+    label: "Actualités",
+    href: "/actualites",
+  },
+  {
+    label: "L'équipe",
+    href: "/equipe",
+  },
+  {
+    label: "La boutique",
+    href: "#",
+  },
+  {
+    label: "Faq",
+    href: "/faq",
+  },
+];
+---
+
+<HeaderWrapper client:idle>
+  <a href="/" class="logo">
+    <Image src={logoImg} alt="logo à fond" width={400} />
+    <span>Le mag des petits mordus de sports</span>
+  </a>
+  <nav class="desktop">
+    <ul role="list">
+      {
+        links.map(({ href, label }) => (
+          <li>
+            <Button {href}>{label}</Button>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+  <nav class="mobile">
+    <Menu client:idle>
+      <ul role="list">
+        {
+          links.map(({ href, label }, i) => (
+            <li style={`--_index:${i}`}>
+              {" "}
+              <Button {href}>{label}</Button>
+            </li>
+          ))
+        }
+      </ul>
+    </Menu>
+  </nav>
+</HeaderWrapper>
+
+<style>
+  .logo {
+    position: relative;
+    display: block;
+    & > img {
+      width: auto;
+      height: var(--space-xl);
+    }
+    & > span {
+      position: absolute;
+      white-space: nowrap;
+      top: 110%;
+      background-color: var(--color-black);
+      padding: var(--space-3xs);
+      transform: rotate(-1deg) translate(-50%, -25%);
+      border-radius: 0.2rem;
+      font-size: var(--step--2);
+      left: 50%;
+      @media (width < 60rem) {
+        display: none;
+      }
+    }
+  }
+
+  nav.desktop {
+    & > ul {
+      display: flex;
+      gap: var(--space-s);
+    }
+    @media (width < 60rem) {
+      display: none;
+    }
+  }
+
+  li {
+    rotate: 0.8deg;
+    &:nth-child(2n) {
+      rotate: -0.8deg;
+    }
+  }
+  nav.mobile {
+    & ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      background-color: var(--color-green-1);
+      gap: var(--space-xl);
+      font-size: var(--step-2);
+    }
+    & li {
+      animation: from-bottom 0.3s calc(0.3s + var(--_index) * 0.1s) both;
+    }
+    @media (width >= 60rem) {
+      display: none;
+    }
+  }
+
+  @keyframes from-bottom {
+    from {
+      opacity: 0;
+      transform: translateY(1rem);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+</style>

@@ -1,6 +1,6 @@
 ---
 title: Alison Chinon
-image: /alison.png
+image: /src/assets/alison.png
 priority: 1
 ---
 

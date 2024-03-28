@@ -1,8 +1,9 @@
 ---
 import Base from "#layouts/Base.astro";
-import { getItemsFromCollection } from "#lib/content/getCollectionItems.ts";
+import { getCollectionByPriority } from "#lib/content/getCollectionItems.ts";
+import { Image } from "astro:assets";
 import Surface from "../components/Surface.astro";
-const teamMembers = await getItemsFromCollection("team");
+const teamMembers = await getCollectionByPriority("team");
 ---
 
 <Base title="L'équipe">
@@ -10,7 +11,7 @@ const teamMembers = await getItemsFromCollection("team");
     {
       teamMembers.map(({ title, image, Content }) => (
         <div class="member">
-          <img src={image} alt={`portrait de ${title}`} />
+          <Image src={image} alt={`portrait de ${title}`} />
           <Surface background="green-1" center>
             <h2 class="text-lg semibold">{title}</h2>
           </Surface>

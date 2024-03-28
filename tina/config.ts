@@ -22,8 +22,8 @@ export default defineConfig({
   },
   media: {
     tina: {
-      mediaRoot: "",
-      publicFolder: "public",
+      mediaRoot: "/src/assets",
+      publicFolder: "",
     },
   },
   // See docs on content modeling for more info on how to setup new content models: https://tina.io/docs/schema/
@@ -83,16 +83,23 @@ export default defineConfig({
         path: "src/content/posts",
         fields: [
           fields.title,
-          fields.body,
           fields.date,
           fields.image,
           fields.altImage,
+          fields.text,
+          fields.body,
         ],
       },
       {
         name: "pages",
-        label: "Pages",
+        label: "Légales",
         path: "src/content/pages",
+        ui: {
+          allowedActions: {
+            create: false,
+            delete: false,
+          },
+        },
         fields: [fields.title, fields.body],
       },
     ],

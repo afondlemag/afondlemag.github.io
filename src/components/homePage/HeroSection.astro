@@ -1,6 +1,7 @@
 ---
 import Button from "#components/Button.svelte";
 import Surface from "#components/Surface.astro";
+import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 
 const [hero] = await getCollection("hero");
@@ -19,7 +20,7 @@ const { title, image, url, altImage } = hero.data;
       <Button href={url} targetBlank>Feuilleter</Button>
     </div>
   </div>
-  <img src={image} alt={altImage} style="margin-inline:auto;" />
+  <Image src={image} alt={altImage} height={400} />
 </div>
 
 <style>
@@ -39,7 +40,7 @@ const { title, image, url, altImage } = hero.data;
       gap: var(--space-s);
     }
     img {
-      max-height: 40vmin;
+      margin-inline: auto;
     }
 
     @media (width>60rem) {
@@ -48,9 +49,6 @@ const { title, image, url, altImage } = hero.data;
       grid-template-columns: minmax(30rem, 2fr) 1fr;
       & .btns {
         justify-content: flex-start;
-      }
-      img {
-        max-height: none;
       }
     }
   }

@@ -1,5 +1,5 @@
 ---
-title: mentions-legales
+title: mentions légales
 ---
 
 # Mentions légales

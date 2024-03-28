@@ -5,7 +5,7 @@
 </script>
 
 {#if $currentTab === key}
-  <div class="item" transition:fade>
+  <div class="item" transition:fade role="tabpanel">
     <slot />
   </div>
 {/if}

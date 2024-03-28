@@ -1,0 +1,52 @@
+---
+import slugify from "slugify";
+import type { GetStaticPaths } from "astro";
+import { getCollectionByDate } from "../../lib/content/getCollectionItems.ts";
+import Base from "../../layouts/Base.astro";
+import { Image } from "astro:assets";
+export const getStaticPaths = (async () => {
+  const actus = await getCollectionByDate("posts");
+  return actus.map((el) => ({
+    params: {
+      slug: slugify(el.title),
+    },
+    props: el,
+  }));
+}) satisfies GetStaticPaths;
+
+const { title, image, altImage, Content, date } = await Astro.props;
+---
+
+<Base {title}>
+  <article>
+    <header>
+      <h1>{title}</h1>
+      <p>publié le {date.toLocaleDateString("fr")}</p>
+    </header>
+    <Content />
+  </article>
+</Base>
+
+<script>
+  import "youtube-video-element";
+</script>
+
+<style is:global>
+  header {
+    & > h1 {
+      margin-block-end: var(--space-s);
+    }
+    & > p {
+      font-style: italic;
+    }
+    margin-block-end: var(--space-l);
+  }
+  youtube-video {
+    display: block;
+    aspect-ratio: 16/9;
+    margin-block: var(--space-m);
+  }
+  img {
+    margin-inline: auto;
+  }
+</style>

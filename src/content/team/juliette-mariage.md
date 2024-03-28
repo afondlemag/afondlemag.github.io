@@ -1,6 +1,6 @@
 ---
 title: Juliette Mariage
-image: /juliette.png
+image: /src/assets/juliette.png
 priority: 2
 ---
 

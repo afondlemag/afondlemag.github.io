@@ -2,7 +2,7 @@
 import "toastify-js/src/toastify.css";
 import "@fontsource-variable/outfit";
 import "#styles/index.css";
-import Header from "../components/Header/Header.svelte";
+import Header from "../components/Header/Header.astro";
 import Footer from "../components/Footer/Footer.astro";
 export type Props = {
   title: string;
@@ -16,10 +16,11 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
     <title>{title}</title>
   </head>
   <body>
-    <Header client:idle />
+    <Header />
     <main>
       <slot />
     </main>

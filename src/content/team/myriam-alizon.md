@@ -1,6 +1,6 @@
 ---
 title: Myriam Alizon
-image: /myriam.png
+image: /src/assets/myriam.png
 priority: 3
 ---
 

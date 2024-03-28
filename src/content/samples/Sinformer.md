@@ -1,7 +1,7 @@
 ---
 title: S'informer
 priority: 10
-image: /gazette-xl.jpg
+image: /src/assets/gazette-xl.jpg
 altImage: Vue des pages "Le geste des pro"
 ---
 
