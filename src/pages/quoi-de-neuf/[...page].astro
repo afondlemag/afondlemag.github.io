@@ -21,12 +21,12 @@ const rotates = [-0.8, -0.4, 1.3, 0.9];
     {
       actus.map((el, i) => (
         <article style={`transform: rotate(${rotates[i % rotates.length]}deg)`}>
-          <a href={`/actualites/${slugify(el.title)}`} class="imgWrapper">
+          <a href={`/quoi-de-neuf/${slugify(el.title)}`} class="imgWrapper">
             <Image src={el.image} alt={el.altImage} />
           </a>
           <div class="description">
             <h2 class="text-lg semibold">
-              <a href={`/actualites/${slugify(el.title)}`}>{el.title}</a>
+              <a href={`/quoi-de-neuf/${slugify(el.title)}`}>{el.title}</a>
             </h2>
             <p>{el.text}</p>
           </div>

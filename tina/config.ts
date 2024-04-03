@@ -51,7 +51,13 @@ export default defineConfig({
         name: "samples",
         label: "Un magazine pour",
         path: "src/content/samples",
-        fields: [fields.title, fields.priority, fields.image, fields.altImage],
+        fields: [
+          fields.title,
+          fields.priority,
+          fields.image,
+          fields.altImage,
+          fields.body,
+        ],
       },
       {
         name: "testimonials",
