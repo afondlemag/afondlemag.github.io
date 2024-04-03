@@ -1,6 +1,6 @@
 ---
 title: Bouger
-priority: 40
+priority: 15
 image: /src/assets/gazette-xl.jpg
 altImage: manchette
 ---
