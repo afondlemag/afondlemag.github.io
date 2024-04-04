@@ -2,4 +2,4 @@
 priority: 30
 ---
 
-À fond ! aime la mixité et la diversité
+***À fond!*** aime la mixité et la diversité
