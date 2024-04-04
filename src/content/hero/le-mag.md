@@ -6,6 +6,8 @@ altImage: Mo et Jo qui font du sport
 url: 'https://www.calameo.com/read/0071538196f9628abe6c3'
 ---
 
-60 pages pour lire, s’informer, bouger, s'amuser et 1 poster pour rêver ! 
+6***0 pages pour lire, s’informer, bouger, s'amuser et 1 poster pour rêver !***
 
-Parce que le sport mérite d’avoir son magazine jeunesse et que la presse jeunesse mérite d’avoir son magazine de sport, nous avons imaginé À fond ! Un magazine imprimé de 60 pages, pour toutes les petites filles et les petits garçons de 7 à 11 ans.
+Le sport, ça se vit et ça se lit ! Tous les 60 jours, À fond! explore le monde du sport à travers des histoires et personnalités inspirantes, des interviews percutantes, des reportages détonants ou des rubriques amusantes. À fond! est un magazine multisports, indépendant, inclusif et imprimé en France.
+
+Le coéquipier idéal de l’école au collège.
