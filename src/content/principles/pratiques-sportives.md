@@ -2,4 +2,4 @@
 priority: 20
 ---
 
-***À fond!*** aime toutes les pratiques sportives
+***À fond!*** aime tous les sports
