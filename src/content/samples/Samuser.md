@@ -5,4 +5,4 @@ image: /src/assets/jeux-xl.jpg
 altImage: Vue des pages "Jeux"
 ---
 
-Dans chaque numéro, tu découvriras des jeux, des quiz et des cartes à collectionner. Et un poster!
+Parce qu’un magazine sans jeux est un peu triste, retrouvez dans chaque numéro 4 pages de jeux sportifs et des cartes à découper et collectionner.
