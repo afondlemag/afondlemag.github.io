@@ -22,12 +22,12 @@
     "tinacms": "^1.6.0",
     "toastify-js": "^1.12.0",
     "typescript": "^5.4.3",
-    "youtube-video-element": "^1.0.0",
-    "unist-util-visit": "^5.0.0"
+    "unist-util-visit": "^5.0.0",
+    "youtube-video-element": "^1.0.0"
   },
   "devDependencies": {
     "@tinacms/cli": "^1.5.42",
-    "@types/node": "^20.11.30",
+    "@types/node": "^20.12.4",
     "@types/toastify-js": "^1.12.3",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
