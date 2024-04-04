@@ -6,4 +6,4 @@ image: /src/assets/dossier-xl.jpg
 altImage: Vue des pages "Le dossier"
 ---
 
-Grâce au dossier, au reportage ou aux rubriques récurrentes comme « Quand j’avais 10 ans », les lectrices et lecteurs découvrent les sports et leurs spécificités. Des formats variés, illustrés, dessinés pour apprendre en s’amusant. Et bien sûr, des dossiers complets sur les grands événements sportifs.
+Découvrir, expliquer, comprendre, admirer ... Grâce au dossier, au **reportage **ou aux rubriques récurrentes comme **Quand j’avais 10 ans** ou **Culture Sport,** les enfants découvrent les sports et leurs spécificités. Des rubriques aux formats variés :  texte, photo, dessin, sous forme de quiz ou d'interviews. Il y en a pour tous les goûts ! Des pages spéciales sont consacrées grands événements sportifs.
