@@ -5,4 +5,4 @@ image: /src/assets/sinformer.png
 altImage: Vue des pages "Le geste des pro"
 ---
 
-Avec les pages gazette, tu seras toujours au courant de l’actualité sportive et de la vie du « Club des Fondus », la communauté des abonné(e)s À fond!
+La gazette balaye l’actualité sportive du moment. Et le rendez-vous du « Club des Fondus » permet de ne rien rater de l’actu' de la communauté des lectrices et lecteurs d’À fond!
