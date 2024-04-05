@@ -63,7 +63,16 @@ export default defineConfig({
         name: "testimonials",
         label: "Ils parlent de nous",
         path: "src/content/testimonials",
-        fields: [fields.title, fields.body, fields.priority],
+        fields: [
+          fields.title,
+          fields.body,
+          fields.priority,
+          {
+            type: "string",
+            name: "url",
+            required: false,
+          },
+        ],
       },
       {
         name: "principles",
