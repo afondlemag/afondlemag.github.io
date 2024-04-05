@@ -1,5 +1,5 @@
 ---
-title: Le ciel est-il bleu ?
+title: Est-ce qu’il y a de la publicité dans À fond! ?
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime          repellat dignissimos, cupiditate voluptas placeat accusamus          reprehenderit corrupti sed. Delectus, asperiores. Itaque quam suscipit          quisquam minima, unde ratione voluptatum nam nulla?
+À fond ! ne vend pas d’espaces publicitaires mais peut nouer des partenariats avec des entités qui partagent les mêmes valeurs que le magazine et ont un sens pour les lecteurs.
