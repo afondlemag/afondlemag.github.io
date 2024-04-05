@@ -1,5 +1,5 @@
 ---
-title: Lorem ipsum ?
+title: Peut-on s’abonner si on ne vit pas en France métropolitaine ?
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime          repellat dignissimos, cupiditate voluptas placeat accusamus          reprehenderit corrupti sed. Delectus, asperiores. Itaque quam suscipit          quisquam minima, unde ratione voluptatum nam nulla?
+Oui, le magazine est envoyé partout dans le monde. Dans le formulaire d’abonnement, sélectionnez votre pays ou DOM ou TOM et un forfait comprenant les frais d’expédition s’ajoutera au prix de l’abonnement.
