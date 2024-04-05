@@ -1,5 +1,5 @@
 ---
-title: Pourquoi quelque chose ?
+title: 'Où trouver d’anciens numéros d’À fond ! ? '
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime          repellat dignissimos, cupiditate voluptas placeat accusamus          reprehenderit corrupti sed. Delectus, asperiores. Itaque quam suscipit          quisquam minima, unde ratione voluptatum nam nulla?
+Tous les anciens numéros encore disponibles sont en vente dans la boutique en ligne.
