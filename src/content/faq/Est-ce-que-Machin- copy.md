@@ -1,5 +1,5 @@
 ---
-title: Est-ce que Machin ?
+title: 'Comment s''abonner ? '
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime          repellat dignissimos, cupiditate voluptas placeat accusamus          reprehenderit corrupti sed. Delectus, asperiores. Itaque quam suscipit          quisquam minima, unde ratione voluptatum nam nulla?
+Pour les particuliers sur la boutique en ligne ou en téléchargeant ce bulletin d’adhésion. Pour les collectivités, écoles, collèges, vous pouvez télécharger ce bon de commande et le renvoyer à [afondlemag@sotiaf.fr](mailto:afondlemag@sotiaf.fr)
