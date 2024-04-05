@@ -1,7 +1,7 @@
 ---
 title: S'amuser
 priority: 0
-image: /src/assets/jeux-xl.jpg
+image: /src/assets/Capture d’écran 2024-04-05 à 11.31.26.png
 altImage: Vue des pages "Jeux"
 ---
 
