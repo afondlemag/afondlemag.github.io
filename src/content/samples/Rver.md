@@ -1,7 +1,7 @@
 ---
 title: Rêver
 priority: 30
-image: /src/assets/histoire-xl.jpg
+image: /src/assets/romanegranehis.16.png
 altImage: Vue des pages "La grande histoire"
 ---
 
