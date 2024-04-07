@@ -2,7 +2,7 @@
 magazineUrl: 'https://www.calameo.com/read/0071538196f9628abe6c3'
 title: Le magazine de sport des enfants !
 image: /src/assets/IMG_7625.JPG
-altImage: couvertures magazines a fond
+altImage: enfants qui lisent à fond
 url: 'https://www.calameo.com/read/0071538196f9628abe6c3'
 ---
 
