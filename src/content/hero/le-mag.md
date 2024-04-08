@@ -1,7 +1,7 @@
 ---
 magazineUrl: 'https://www.calameo.com/read/0071538196f9628abe6c3'
 title: Le magazine de sport des enfants
-image: /src/assets/IMG_7617 - Modifié.png
+image: /src/assets/grosseombre.jog.png
 altImage: Enfants qui lisent le magazine A fond
 url: 'https://www.calameo.com/read/0071538196f9628abe6c3'
 ---
