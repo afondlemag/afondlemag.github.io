@@ -60,8 +60,10 @@
     align-items: center;
     padding-block: var(--space-xs);
     padding-inline: 0;
+    text-align: left;
     & svg {
       font-size: var(--step-1);
+      flex-shrink: 0;
     }
     & path {
       transform: rotate(calc(1deg * var(--_rotate)));
