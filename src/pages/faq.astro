@@ -16,7 +16,9 @@ const questions = await getCollectionByPriority("faq");
             <h2 slot="head" class="text-xl semibold">
               {title}
             </h2>
-            <Content />
+            <div class="content">
+              <Content />
+            </div>
           </Accordion>
         ))
       }
@@ -27,5 +29,11 @@ const questions = await getCollectionByPriority("faq");
 <style>
   h1 {
     margin-block-end: var(--space-l);
+  }
+</style>
+
+<style is:global>
+  .content a {
+    color: var(--color-blue-1);
   }
 </style>
