@@ -6,7 +6,7 @@ import { replaceImagesPathes } from "./replaceImagesPathes.js";
 // https://astro.build/config
 export default defineConfig({
   integrations: [svelte(), sitemap()],
-  site: "https://afondlemag.github.io",
+  site: "https://afondlemag.fr",
   markdown: {
     remarkPlugins: [replaceImagesPathes],
   },
