@@ -5,7 +5,7 @@ image: /src/assets/actus/7-2.png
 altImage: Découvre le numéro 7 d'À fond !
 text: >-
   Un numéro très rugby pour la Coupe du monde en France. Et la grande histoire
-  de Lilou Ruel, championne de parkour
+  de Lilou Ruel, championne de parkour.
 ---
 
 Sommaire du numéro 7 (septembre-octobre 2023)
