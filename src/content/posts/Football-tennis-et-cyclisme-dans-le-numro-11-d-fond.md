@@ -16,7 +16,7 @@ Le numéro 11 d'À fond!, celui de mai-juin est en vente. Découvrez le sommaire
 
 **•	Le dossier : Comment construit-on le parcours du Tour de France ?**
 
-Thierry Gouvenou, directeur de la course masculine et Marion Rousse, directrice du Tour femmes, nous expliquent comment on trace le Tour de France (qui ne fait jamais le tour de la France, ça, vous l’aurez bien remarqué). 
+Thierry Gouvenou, directeur de la course masculine et Marion Rousse, directrice du Tour femmes, nous expliquent comment on trace le Tour de France (qui ne fait jamais le tour de la France, ça, vous l’aurez bien remarqué).
 
 **•	Le reportage : Un jour à Roland-Garros**
 
@@ -24,9 +24,9 @@ Découvrez les photos qui symbolisent le prestigieux tournoi parisien : de la te
 
 •	**Quand j’avais 10 ans** avec Dorian Conynx, champion de triathlon
 
-•	Les **jeux **de la natation
+•	Les** jeux **de la natation
 
-•	**C’était hier **:  Le premier 10 sur 10 de Nadia Comaneci aux JO de 1976
+•	**C’était hier** :  Le premier 10 sur 10 de Nadia Comaneci aux JO de 1976
 
 •	**Le geste de pro** : le lancer de frisbee en ultimate expliqué par Maëva Coussy
 
