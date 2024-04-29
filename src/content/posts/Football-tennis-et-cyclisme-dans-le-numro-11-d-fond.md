@@ -8,11 +8,11 @@ text: >-
   et un poster de Mélanie de Jesus Dos Santos dans le numéro 11 d'À fond!
 ---
 
-Le numéro 11 d'À fond!, celui de mai-juin est [en vente](). Découvrez le sommaire :
+Le numéro 11 d'À fond!, celui de mai-juin est [en vente](https://afondlemag.fr/boutique/ "Boutique A fond"). Découvrez le sommaire :
 
 **•	La grande histoire de Kylian Mbappé**
 
-16 pages pour se plonger dans le parcours de l’attaquant du PSG et de l’équipe de France. De son enfance à Bondy jusqu’au capitanat des Bleus, découvrez l’itinéraire d’un champion hors normes. Et aussi : le tableau de l’Euro 2024 et le quiz de l’Euro.
+16 pages pour se plonger dans le parcours de l’attaquant du PSG et de l’équipe de France de football. De son enfance à Bondy jusqu’au capitanat des Bleus, découvrez l’itinéraire d’un champion hors normes. Et aussi : le tableau de l’Euro 2024 et le quiz de l’Euro.
 
 **•	Le dossier : Comment construit-on le parcours du Tour de France ?**
 
@@ -24,7 +24,7 @@ Découvrez les photos qui symbolisent le prestigieux tournoi parisien : de la te
 
 •	**Quand j’avais 10 ans** avec Dorian Conynx, champion de triathlon
 
-•	Les\*\* jeux \*\*de la natation
+•	**Les jeux** de la natation
 
 •	**C’était hier** :  Le premier 10 sur 10 de Nadia Comaneci aux JO de 1976
 
