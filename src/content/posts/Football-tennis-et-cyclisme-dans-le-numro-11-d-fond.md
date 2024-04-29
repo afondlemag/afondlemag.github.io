@@ -8,7 +8,7 @@ text: >-
   et un poster de Mélanie de Jesus Dos Santos dans le numéro 11 d'À fond!
 ---
 
-Le numéro 11 d'À fond!, celui de mai-juin est en vente. Découvrez le sommaire :
+Le numéro 11 d'À fond!, celui de mai-juin est [en vente](). Découvrez le sommaire :
 
 **•	La grande histoire de Kylian Mbappé**
 
