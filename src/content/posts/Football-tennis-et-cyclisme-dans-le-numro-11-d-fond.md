@@ -4,9 +4,11 @@ date: 2024-04-23T22:00:00.000Z
 image: /src/assets/AFOND11couverture.png
 altImage: Le numéro 11 est dispo !
 text: >-
-  La grande histoire de Kylian Mbappé, les secrets du parcours du Tour de France
-  et un poster de Mélanie de Jesus Dos Santos dans le numéro 11 d'À fond!
+  Découvrez la grande histoire de Kylian Mbappé, les secrets du parcours du Tour
+  de France et un poster de Mélanie de Jesus Dos Santos.
 ---
+
+![](/src/assets/AFOND11couverture.png)
 
 Le numéro 11 d'À fond!, celui de mai-juin est [en vente](https://afondlemag.fr/boutique/ "Boutique A fond"). Découvrez le sommaire :
 
@@ -22,7 +24,7 @@ Thierry Gouvenou, directeur de la course masculine et Marion Rousse, directrice 
 
 Découvrez les photos qui symbolisent le prestigieux tournoi parisien : de la terre battue, des stars, des ramasseurs de balle et Rafael Nadal, bien sûr !
 
-•	**Quand j’avais 10 ans** avec Dorian Conynx, champion de triathlon
+•	**Quand j’avais 10 ans** avec Dorian Coninx, champion de triathlon
 
 •	**Les jeux** de la natation
 
