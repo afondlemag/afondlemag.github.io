@@ -2,7 +2,7 @@
 title: 'Football, tennis et cyclisme dans le numéro 11 d''À fond!'
 date: 2024-04-23T22:00:00.000Z
 image: /src/assets/AFOND11couverture.png
-altImage: Sortie du magazine À fond! 11
+altImage: Le numéro 11 est dispo !
 text: >-
   La grande histoire de Kylian Mbappé, les secrets du parcours du Tour de France
   et un poster de Mélanie de Jesus Dos Santos dans le numéro 11 d'À fond!
@@ -24,7 +24,7 @@ Découvrez les photos qui symbolisent le prestigieux tournoi parisien : de la te
 
 •	**Quand j’avais 10 ans** avec Dorian Conynx, champion de triathlon
 
-•	Les** jeux **de la natation
+•	Les\*\* jeux \*\*de la natation
 
 •	**C’était hier** :  Le premier 10 sur 10 de Nadia Comaneci aux JO de 1976
 
