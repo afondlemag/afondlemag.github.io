@@ -2,7 +2,7 @@
 title: 'Quel est le délai de livraison de ma commande ? '
 ---
 
-Les magazines sont envoyés chaque jeudi en tarif Presse 4 jour ouvrés. Exceptionnellement jusqu'aux Jeux olympiques, ils sont envoyés aussi chaque mardi. 
+Les magazines *(achetés à l'unité ou ceux des nouveaux abonnés)* sont envoyés chaque jeudi en tarif Presse, 4 jours ouvrés. Exceptionnellement jusqu'aux Jeux olympiques, ils sont envoyés aussi chaque mardi.
 
 Pour les abonnés, les magazines arrivent au début du mois de parution.
 
