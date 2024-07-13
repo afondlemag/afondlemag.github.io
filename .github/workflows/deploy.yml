@@ -1,29 +1,49 @@
-name: Generate a build and push to another branch
-
+name: Deploy to GitHub Pages
 on:
   push:
-    branches:
-      - main # The branch name your are commit the new changes
+    branches: "main"
 
 jobs:
-  build:
+  build_site:
     runs-on: ubuntu-latest
-    name: Build and Push
     steps:
-      - name: git-checkout
+      - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Install all dependencies
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: npm
+
+      - name: Install dependencies
         run: npm install
 
-      - name: Build
-        run: npm run build # The build command of your project
-
-      - name: Push
-        uses: s0/git-publish-subdir-action@develop
+      - name: build
         env:
-          REPO: self
-          BRANCH: build # The branch name where you want to push the assets
-          FOLDER: build # The directory where your assets are generated
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
-          MESSAGE: "Build: ({sha}) {msg}" # The commit message
+          TINA_CLIENT_ID: ${{ secrets.TINA_CLIENT_ID }}
+          TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
+        run: |
+          npm run build
+
+      - name: Upload Artifacts
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: "dist/"
+
+  deploy:
+    needs: build_site
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v2
