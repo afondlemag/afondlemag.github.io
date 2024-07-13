@@ -11,7 +11,7 @@ const teamMembers = await getCollectionByPriority("team");
     {
       teamMembers.map(({ title, image, Content }) => (
         <div class="member">
-          <Image src={image} alt={`portrait de ${title}`} />
+          <Image src={image} alt={`portrait de ${title}`} width={400} />
           <Surface background="green-1" center>
             <h2 class="text-lg semibold">{title}</h2>
           </Surface>
@@ -39,5 +39,10 @@ const teamMembers = await getCollectionByPriority("team");
   }
   img {
     margin-inline: auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 9999em;
+    overflow: hidden;
   }
 </style>
