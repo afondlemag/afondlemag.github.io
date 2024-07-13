@@ -1,8 +1,8 @@
 ---
 title: À fond! s'écoute pendant l'été
 date: 2024-07-08T22:00:00.000Z
-image: /src/assets/À fond les Jeux !.png
-altImage: 'Retrouvez À fond les Jeux !, avec Myriam Alizon, sur RTL'
+image: /src/assets/a-fond-les-jeux.png
+altImage: "Retrouvez À fond les Jeux !, avec Myriam Alizon, sur RTL"
 text: >
   Dans " À fond les Jeux! " sur RTL, notre red' chef Myriam Alizon répond aux
   questions que les enfants se posent sur les Jeux olympiques.
