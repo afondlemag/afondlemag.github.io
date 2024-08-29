@@ -10,7 +10,7 @@ text: >-
 
 **Revivez la magie des Jeux de Paris dans le numéro de rentrée d’À fond !** Pour ne rien oublier d’une quinzaine olympique et fantastique, nous avons conçu ce magazine comme un album souvenir. À chaque jour de compétition, sa double page composée d’une interview, d’une histoire, de photos et d’un cartoon de Mo et Jo, les deux mascottes du magazine.
 
-Notre envoyée spéciale aux Jeux de Paris, a interviewé les plus grandes stars des JO comme Simone Biles, Léon Marchand ou Nikola Karabatic…
+Notre envoyée spéciale aux Jeux de Paris a interviewé les plus grandes stars des JO comme Simone Biles, Léon Marchand ou Nikola Karabatic…
 
 ![](/src/assets/2.png)
 
