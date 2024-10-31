@@ -5,7 +5,7 @@ image: /src/assets/couv14insta.png
 altImage: Couverture du numéro 14
 text: >-
   On explore le monde avec les marins du Vendée Globe et on prend de la hauteur
-  avec la grande histoire de Victor Wembanyama.
+  avec la grande histoire du basketteur Victor Wembanyama.
 ---
 
 ***Le numéro 14 (novembre-décembre) explore le monde avec les marins du Vendée Globe, prend de la hauteur avec la grande histoire de Victor Wembanyama et dit adieux aux Jeux avec un reportage aux Jeux paralympiques.***
@@ -25,7 +25,7 @@ Les plus grands basketteurs le surnomment l’extraterrestre. Repéré par Nante
 8 pages de photos pour revivre les Jeux paralympiques de Paris
 
 * Quand j’avais 10 ans avec **Alexis Pinturault**
-* C’était hier avec la** victoire de la France en Coupe Davis 1991**
+* C’était hier avec la\*\* victoire de la France en Coupe Davis 1991\*\*
 * **Le geste de pro :** le tir au football avec Eugénie Le Sommer
 * Les **cartes champions** du patinage artistique
 * Les jeux, la gazette, la gazette des fondus
