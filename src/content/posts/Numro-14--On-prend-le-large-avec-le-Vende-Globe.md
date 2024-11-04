@@ -8,7 +8,7 @@ text: >-
   avec la grande histoire du basketteur Victor Wembanyama.
 ---
 
-***Le numéro 14 (novembre-décembre) explore le monde avec les marins du Vendée Globe, prend de la hauteur avec la grande histoire de Victor Wembanyama et dit adieux aux Jeux avec un reportage aux Jeux paralympiques.***
+***Le numéro 14 (novembre-décembre) explore le monde avec les marins du Vendée Globe, prend de la hauteur avec la grande histoire de Victor Wembanyama et dit adieu aux Jeux avec un reportage aux Jeux paralympiques.***
 
 SOMMAIRE
 
@@ -18,7 +18,7 @@ SOMMAIRE
 
 * **La grande histoire de Victor Wenbanyama**
 
-Les plus grands basketteurs le surnomment l’extraterrestre. Repéré par Nanterre à 10 ans, Victor Wembanyama a conquis le monde. On te raconte son histoire en texte en photos.
+Les plus grands basketteurs le surnomment l’extraterrestre. Repéré par Nanterre à 10 ans, Victor Wembanyama a conquis le monde. On te raconte son histoire en texte et en photos.
 
 * **Le reportage : Les Paras enchantent Paris**
 
