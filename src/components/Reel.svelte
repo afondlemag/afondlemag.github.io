@@ -97,6 +97,9 @@
 
 <style>
   .wrapper :global(.reel) {
+    &::-webkit-scrollbar {
+      display: none;
+    }
     display: flex;
     overflow-x: auto;
     gap: var(--space-xl);
