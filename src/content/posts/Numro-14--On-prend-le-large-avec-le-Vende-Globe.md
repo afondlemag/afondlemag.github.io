@@ -18,7 +18,7 @@ SOMMAIRE
 
 * **La grande histoire de Victor Wenbanyama**
 
-Les plus grands basketteurs le surnomment l’extraterrestre. Repéré par Nanterre à 10 ans, Victor Wembanyama a conquis le monde. On te raconte son histoire en texte en photos.
+Les plus grands basketteurs le surnomment l’extraterrestre. Repéré par Nanterre à 10 ans, Victor Wembanyama a conquis le monde. On te raconte son histoire en texte et en photos.
 
 * **Le reportage : Les Paras enchantent Paris**
 
