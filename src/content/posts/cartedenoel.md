@@ -8,6 +8,8 @@ text: >-
   quiz et un lien vers l'album souvenir des Jeux olympiques 2024.
 ---
 
+![](</src/assets/Capture d’écran 2024-12-03 à 10.17.07.png>)
+
 Vous offrez un abonnement au magazine À fond! pour Noël ?
 
 Téléchargez et imprimez la carte de Noël.
