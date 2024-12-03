@@ -1,7 +1,7 @@
 ---
 title: Téléchargez la carte de Noël à glisser sous le sapin !
 date: 2024-12-02T23:00:00.000Z
-image: /src/assets/Capture d’écran 2024-12-03 à 10.17.07.png
+image: /src/assets/cartenoel.png
 altImage: Carte de Noel
 text: >-
   Téléchargez la carte de Noël à glisser sous le sapin. Quatre page de jeux,
