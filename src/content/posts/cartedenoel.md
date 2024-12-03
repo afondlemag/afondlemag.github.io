@@ -8,7 +8,9 @@ text: >-
   quiz et un lien vers l'album souvenir des Jeux olympiques 2024.
 ---
 
-Vous offrez un abonnement au magazine À fond! pour Noël. Téléchargez et imprimez la carte de Noël. 
+Vous offrez un abonnement au magazine À fond! pour Noël ?
+
+Téléchargez et imprimez la carte de Noël.
 
 Quatre pages de jeux, quiz et un QR code pour lire le numéro des Jeux olympiques 2024 en ligne.
 
