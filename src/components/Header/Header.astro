@@ -59,6 +59,11 @@ let links = [
       </ul>
     </Menu>
   </nav>
+
+  <div class="news" slot="news">
+    <a href="/carte-de-noel-2024.pdf" download="carte-de-noel-afond-.pdf" class="">🎄🎁 Carte de Noël à télécharger</a>
+  </div>
+
 </HeaderWrapper>
 
 <style>
@@ -127,6 +132,18 @@ let links = [
     }
     to {
       opacity: 1;
+    }
+  }
+
+  .news{
+    background-color: var(--color-yellow-1);
+    padding-block-start: var(--space-xs);
+    padding-block-end: var(--space-2xs);
+    padding-inline: var(--space-m);
+    text-align: center;
+     
+    & > a {
+      text-decoration: underline;
     }
   }
 </style>

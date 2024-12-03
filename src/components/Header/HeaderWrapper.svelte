@@ -13,6 +13,7 @@
 </script>
 
 <svelte:window bind:scrollY />
+<slot name="news" />
 <header style="--_translate:{$translateY}">
   <slot />
 </header>
@@ -21,6 +22,7 @@
   header {
     position: sticky;
     top: calc(-1.3 * var(--_translate) * var(--space-2xl));
+    z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +31,6 @@
     height: var(--space-2xl);
     padding-inline: var(--space-l);
     padding-block: var(--space-3xs);
-    z-index: 10;
     @media (width < 60rem) {
       justify-content: center;
     }
