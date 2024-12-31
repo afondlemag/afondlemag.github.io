@@ -4,8 +4,8 @@ date: 2024-12-30T23:00:00.000Z
 image: /src/assets/couv15.png
 altImage: Couverture du magazine de sport pour les enfants
 text: >-
-  Un dossier ski, une histoire de rugby et un photoreportage sur le Vendée Globe
-  sont à lire dans le numéro 15.
+  Un dossier ski, une histoire de rugby, un reportage à bord des bateaux du
+  Vendée Globe sont à lire dans le numéro 15.
 ---
 
 Le quinzième numéro d'À fond! débarque début janvier dans toutes les bonnes boîtes aux lettres. 60 pages de sport et un poster pour tous les enfants.
@@ -27,4 +27,4 @@ Sommaire 
 
  
 
- 
+ ![](/src/assets/couv15.png)
