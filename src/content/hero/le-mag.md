@@ -1,7 +1,7 @@
 ---
 magazineUrl: 'https://www.calameo.com/read/0071538196f9628abe6c3'
 title: Le magazine de sport des enfants
-image: /src/assets/LE MAGAZINE DE SPORT DES ENFANTS (Publication Facebook).png
+image: /src/assets/Design sans titre(15).png
 altImage: Visuels du magazine À fond !
 url: 'https://www.calameo.com/read/0071538196f9628abe6c3'
 ---
