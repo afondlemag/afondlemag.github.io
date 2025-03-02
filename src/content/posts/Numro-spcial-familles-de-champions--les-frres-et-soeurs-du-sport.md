@@ -4,9 +4,9 @@ date: 2025-03-01T23:00:00.000Z
 image: /src/assets/num16.png
 altImage: couverture A fond!
 text: >-
-  Plongez dans la grande histoire des frères Alexis et Félix Lebrun, les
-  nouvelles pépites du tennis de table ! Découvrez un dossier et jeux sur les
-  grandes fratries du sport et embarquez dans la course cycliste Paris-Roubaix.
+  Plongez dans la grande histoire d'Alexis et Félix Lebrun, les nouvelles
+  pépites du tennis de table ! Découvrez un dossier et des jeux sur les grandes
+  fratries du sport et embarquez dans la course cycliste Paris-Roubaix.
 ---
 
 Parce qu’on adore les histoires de frères et sœurs, on vous a préparé un numéro spécial Familles de champions. Découvrez le sommaire du numéro 16 d’À fond !
