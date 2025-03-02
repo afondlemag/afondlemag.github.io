@@ -1,7 +1,7 @@
 ---
 magazineUrl: 'https://www.calameo.com/read/0071538196f9628abe6c3'
 title: Le magazine de sport des enfants
-image: /src/assets/Design sans titre(16).png
+image: /src/assets/coverbis.png
 altImage: Visuels du magazine À fond ! numéro 16
 url: 'https://www.calameo.com/read/0071538196f9628abe6c3'
 ---
